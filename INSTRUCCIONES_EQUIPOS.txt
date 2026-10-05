@@ -1,0 +1,43 @@
+=== GUÍA DE TRABAJO EN EQUIPO (GIT + POO) ===
+Asignatura: Programación Orientada a Objetos
+Proyecto: Arena de Mitos y Leyendas
+
+¡Bienvenidos, equipo de desarrollo! 
+Este es el repositorio central (Main) administrado por su Líder Técnico (el docente).
+Su misión es crear las clases concretas que darán vida a este juego.
+
+INSTRUCCIONES GENERALES PARA TODOS:
+1. NUNCA trabajen en la rama 'main'.
+2. Cada estudiante debe crear su propia rama en Visual Studio (ej. 'rama-juan-duende').
+3. Cada estudiante creará UN SOLO archivo '.cs' nuevo.
+4. Al terminar, hagan Commit, Push y abran un Pull Request en GitHub.
+
+--- DISTRIBUCIÓN DE ROLES (2 a 4 Estudiantes) ---
+
+ESTUDIANTE 1: El Guerrero Aliado (Herencia simple)
+- Crea una nueva clase llamada 'Jukumari.cs'.
+- Haz que herede de la clase abstracta 'SerMitologico'.
+- En el constructor de la clase, asígnale el Nombre = "Oso Jukumari" y Vida = 200.
+- El IDE te pedirá que implementes el método abstracto. Usa 'override' en el método Atacar() para que imprima en consola: "El Jukumari da un zarpazo brutal!".
+
+ESTUDIANTE 2: El Enemigo (Herencia + 1 Interfaz)
+- Crea una nueva clase llamada 'Duende.cs'.
+- Haz que herede de 'SerMitologico' e implemente la interfaz 'IRecompensable'.
+- En el constructor: Nombre = "Duende Ladrón", Vida = 50.
+- Sobrescribe (override) el método Atacar() para imprimir: "El duende lanza una piedra!".
+- Implementa el método de la interfaz SoltarBotin() para imprimir: "El duende soltó 15 monedas de oro.".
+
+ESTUDIANTE 3: El Jefe Mágico (Herencia + 1 Interfaz + Propiedad)
+- Crea una nueva clase llamada 'Supay.cs'.
+- Haz que herede de 'SerMitologico' e implemente la interfaz 'IMagico'.
+- En el constructor: Nombre = "Supay (El Tío)", Vida = 300, Mana = 100.
+- Sobrescribe Atacar() para imprimir: "Supay ataca con su tridente.".
+- Implementa LanzarHechizo() para imprimir: "Supay invoca fuego del inframundo!" y réstale 20 al Mana.
+
+ESTUDIANTE 4: El Creador de Contratos (Crear Interfaz + Herencia)
+- Tu trabajo es doble:
+  A) Crea un nuevo archivo llamado 'ICurador.cs' y define una interface que obligue a tener un método llamado 'CurarAliado()'.
+  B) Crea una nueva clase 'Sacerdote.cs' que herede de 'SerMitologico' e implemente tu nueva interfaz 'ICurador'.
+- En el constructor de Sacerdote: Nombre = "Sacerdote Andino", Vida = 100.
+- Sobrescribe Atacar() para imprimir: "El sacerdote golpea con su báculo.".
+- Implementa CurarAliado() para imprimir: "El sacerdote recita un mantra y cura 50 puntos de vida.".
