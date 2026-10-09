@@ -1,3 +1,4 @@
+using _00_ArenaRPG_Base;
 using System;
 
 namespace ArenaRPG
@@ -13,17 +14,20 @@ namespace ArenaRPG
             Console.WriteLine("Repositorio Original del Líder Técnico (Docente)");
             Console.WriteLine("Estado actual: Esperando la integración del equipo de desarrollo...\n");
 
+            Console.WriteLine("--- INICIA LA BATALLA ---");
+
+
+
             // ------------------------------------------------------------------------
             // ZONA DE PRUEBAS (MERGE DE PULL REQUESTS)
             // ------------------------------------------------------------------------
             // Docente: Una vez que los estudiantes hagan sus Pull Requests y los apruebes, 
             // descomenta el código de abajo para demostrar que sus clases funcionan en conjunto.
 
-            /*
-            Console.WriteLine("--- INICIA LA BATALLA ---");
-            
             // Prueba del Estudiante 1: (Clase Jukumari)
             Jukumari oso = new Jukumari();
+            // Console.WriteLine("Nombre: " + oso.Nombre);
+            //Console.WriteLine("Vida: " + oso.Vida);
             oso.Atacar();
 
             // Prueba del Estudiante 2: (Clase Duende + Interfaz)
@@ -31,7 +35,7 @@ namespace ArenaRPG
             enemigo.Atacar();
             oso.RecibirDanio(20);
             enemigo.SoltarBotin(); // Proviene de IRecompensable
-
+            /*
             // Prueba del Estudiante 3: (Clase Supay + Interfaces)
             Supay jefeMagico = new Supay();
             jefeMagico.LanzarHechizo(); // Proviene de IMagico
